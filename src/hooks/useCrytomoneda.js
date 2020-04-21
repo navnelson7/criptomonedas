@@ -19,24 +19,25 @@ const Label = styled.label`
     border:none;
     font-size:1.2rem;
  `;
-const useMoneda = (label,stateInicial,opciones) =>{
+const useCrytomoneda = (label,stateInicial,opciones) =>{
+    console.log(opciones);
     //state de nuestro customhooks
     const [state, actualizarState] = useState(stateInicial);
-    const Seleccionar = () =>(
+    const SelectCrypto = () =>(
         <Fragment>
             <Label>{label}</Label>
             <Select
                 onChange={e => actualizarState(e.target.value )}
                 value={state}
             >
-                <option value="MXN">Peso Mexicano</option>
-                {opciones.map(opcion =>(
+                 <option value="MXN">Seleciona una Crypto</option>
+                {/* {opciones.map(opcion =>(
                     <option key={opcion.codigo} value={opcion.codigo}>{opcion.nombre}</option>
-                ))}
+                ))} */}
             </Select>
         </Fragment>
     )
     //retornar state , interfaz y funcion que modifica el state
-    return [state, Seleccionar, actualizarState]
+    return [state, SelectCrypto, actualizarState]
 }
-export default useMoneda
+export default useCrytomoneda
