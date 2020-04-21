@@ -20,7 +20,7 @@ const Label = styled.label`
     font-size:1.2rem;
  `;
 const useCrytomoneda = (label,stateInicial,opciones) =>{
-    console.log(opciones);
+    
     //state de nuestro customhooks
     const [state, actualizarState] = useState(stateInicial);
     const SelectCrypto = () =>(
@@ -30,10 +30,10 @@ const useCrytomoneda = (label,stateInicial,opciones) =>{
                 onChange={e => actualizarState(e.target.value )}
                 value={state}
             >
-                 <option value="MXN">Seleciona una Crypto</option>
-                {/* {opciones.map(opcion =>(
-                    <option key={opcion.codigo} value={opcion.codigo}>{opcion.nombre}</option>
-                ))} */}
+                
+                {opciones.map(opcion =>(
+                    <option key={opcion.CoinInfo.Id} value={opcion.CoinInfo.Name}>{opcion.CoinInfo.FullName}</option>
+                ))}
             </Select>
         </Fragment>
     )
