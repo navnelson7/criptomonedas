@@ -29,3 +29,4 @@ npm start
 * [Emotion](https://emotion.sh/docs/introduction) -Emotion es una libreria que permite escriber css con javascript para gener los styled components
 * [Axios](https://www.npmjs.com/search?q=axios)
 * [CryptoCompare](https://min-api.cryptocompare.com/) - Api para cotizar y comparar cryptomonedas
+* [Spinkit](https://tobiasahlin.com/spinkit/) - Spin Kit para insertar spinner en tus proyectos
