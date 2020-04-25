@@ -20,7 +20,7 @@ npm install
 npm start
 ```
 ## Para ver una demo visita el siguiente enlace.
-* proximamente
+* [CotizadorCryptoMonedas](https://tender-shirley-dc8b9c.netlify.app/) - Clic para ver una demo del proyecto
 
 
 ## Construido con:
